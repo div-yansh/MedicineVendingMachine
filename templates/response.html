@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Response</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<h2>Hi {{name}}!</h2>
+		<h3>Your medicines are requested at vending machine</h3>
+		<h3>Please collect it from there</h3>
+
+		<h3>Medicines provide and their use:</h3>
+		<ol>
+			{% for m in medicine %}
+			<li>{{m}}</li>
+			{% endfor %}
+		</ol>
+
+		<h3>Aount to pay:</h3>
+		<ol>
+			{% for p in price %}
+			<li>{{p}}</li>
+			{% endfor %}
+		</ol>
+		<h4>Total: {{total}}</h4>
+
+		<h3>Thank you for using Medicine Vending Machine</h3>
+		<a href="."><h3>Go back to Home Page</h3></a>
+
+	</body>
+</html>
