@@ -32,10 +32,7 @@ def prescription():
 
 	os.chdir(base)
 	
-	return medicine, price, sum(price)
-
-		
-		
+	return medicine, price, round(sum(price), 2)		
 	
 
 	
